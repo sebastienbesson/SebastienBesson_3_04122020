@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'robotregular';
+    src: url('Roboto-Regular-webfont.eot');
+    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Regular-webfont.woff2') format('woff2'),
+         url('Roboto-Regular-webfont.woff') format('woff'),
+         url('Roboto-Regular-webfont.ttf') format('truetype'),
+         url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-family: 'shrikhand';
+    src: url('./Shrikhand-Regular.otf');     
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'roboto', sans-serif;
+}
+header h1{
+    font-family: 'Shrikhand';
+}
+#headerform{
+    font-size: large;
+
+}
