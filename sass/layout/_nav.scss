@@ -1,0 +1,37 @@
+nav{
+    margin-top: 40px;
+}
+
+nav span{
+    font-weight: bold;
+    font-size: 150%;
+    padding-left: 15px;
+}
+
+.navlist{
+    margin: 20px;
+    background-color: #f5eaea;
+    box-shadow: 3px 3px 3px rgb(218, 214, 214);
+    border-radius: 25px;
+    list-style-type: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+
+nav ul span{
+    background-color: #FF79DA;
+    border-radius: 50%;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    font-size: 85%;
+}
+
+nav ul i{
+    padding-left: 15px;
+    padding-right: 25px;
+}
+
+.fa-store{
+    color: #FF79DA;
+}

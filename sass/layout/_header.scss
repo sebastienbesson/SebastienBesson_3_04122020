@@ -1,4 +1,55 @@
+section header{
+    text-align: center;
+}
+
 header h1{
-    width: 100%;
+    font-family: 'shrikhand', sans-serif;
+    font-size: 200%;
+    text-align: center;
+}
+
+#headertop{
     font-weight: bold;
+    background-color: rgb(221, 215, 215);
+    border-top: 2px rgb(236, 232, 232) inset;
+    padding: 20px 0px 20px 0px;
+}
+
+#citysearch{
+    border: none;
+    background-color: rgb(221, 215, 215);
+    margin: auto;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+#headerbottom{
+    background-color: rgb(241, 238, 238);
+    padding-top: 45px;
+    padding-bottom: 55px;
+}
+
+section header h1{
+    background-color: rgb(241, 238, 238);
+    font-size: 145%;
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    margin-block-start: 0rem;
+}
+
+section header h2{
+    background-color: rgb(241, 238, 238);
+    font-size: 105%;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+#restaurantsearching{
+    background-color: #FF79DA;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    padding: 15px;
 }

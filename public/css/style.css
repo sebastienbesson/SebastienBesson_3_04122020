@@ -1,1 +1,17 @@
-@font-face{font-family:"robotregular";src:url("Roboto-Regular-webfont.eot");src:url("Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"),url("Roboto-Regular-webfont.woff2") format("woff2"),url("Roboto-Regular-webfont.woff") format("woff"),url("Roboto-Regular-webfont.ttf") format("truetype"),url("Roboto-Regular-webfont.svg#robotoregular") format("svg");font-family:"shrikhand";src:url("./Shrikhand-Regular.otf");font-weight:normal;font-style:normal}body{font-family:"roboto",sans-serif}header h1{font-family:"Shrikhand"}header h1{width:100%;font-weight:bold}/*# sourceMappingURL=style.css.map */
+/* Error: Can't find stylesheet to import.
+ *    ,
+ * 15 | @import ".layout/footer";
+ *    |         ^^^^^^^^^^^^^^^^
+ *    '
+ *   sass\main.scss 15:9  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 15 \2502  @import \".layout/footer\";\a    \2502          ^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\main.scss 15:9  root stylesheet";
+}
