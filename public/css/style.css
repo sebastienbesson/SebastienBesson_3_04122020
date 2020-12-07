@@ -1,17 +1,1 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 15 | @import ".layout/footer";
- *    |         ^^^^^^^^^^^^^^^^
- *    '
- *   sass\main.scss 15:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 15 \2502  @import \".layout/footer\";\a    \2502          ^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\main.scss 15:9  root stylesheet";
-}
+@font-face{font-family:"robotregular";src:url("Roboto-Regular-webfont.eot");src:url("Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"),url("Roboto-Regular-webfont.woff2") format("woff2"),url("Roboto-Regular-webfont.woff") format("woff"),url("Roboto-Regular-webfont.ttf") format("truetype"),url("Roboto-Regular-webfont.svg#robotoregular") format("svg");font-family:"shrikhand";src:url("./Shrikhand-Regular.otf");font-weight:normal;font-style:normal}body{font-family:"roboto",sans-serif;width:425px;margin:auto}section header{text-align:center}header h1{font-family:"shrikhand",sans-serif;font-size:200%;text-align:center}#headertop{font-weight:bold;background-color:#ddd7d7;border-top:2px #ece8e8 inset;padding:20px 0px 20px 0px}#citysearch{border:none;background-color:#ddd7d7;margin:auto;font-weight:bold;font-size:110%}#headerbottom{background-color:#f1eeee;padding-top:45px;padding-bottom:55px}section header h1{background-color:#f1eeee;font-size:145%;font-family:"roboto",sans-serif;font-weight:bold;margin-block-start:0rem}section header h2{background-color:#f1eeee;font-size:105%;font-weight:bold;padding-bottom:30px}#restaurantsearching{background-color:#ff79da;border:none;border-radius:50px;color:#fff;font-size:150%;font-weight:bold;padding:15px}nav{margin-top:40px}nav span{font-weight:bold;font-size:150%;padding-left:15px}.navlist{margin:20px;background-color:#f5eaea;box-shadow:3px 3px 3px #dad6d6;border-radius:25px;list-style-type:none;padding-top:25px;padding-bottom:25px;font-weight:bold}nav ul span{background-color:#ff79da;border-radius:50%;padding:5px 10px 5px 10px;color:#fff;font-size:85%}nav ul i{padding-left:15px;padding-right:25px}.fa-store{color:#ff79da}footer h1{font-family:"shirkhand",sans-serif}/*# sourceMappingURL=style.css.map */
