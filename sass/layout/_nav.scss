@@ -5,22 +5,24 @@ nav{
 nav span{
     font-weight: bold;
     font-size: 150%;
-    padding-left: 15px;
+    padding-left: 35px;
 }
 
 .navlist{
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
     background-color: #f5eaea;
     box-shadow: 3px 3px 3px rgb(218, 214, 214);
     border-radius: 25px;
     list-style-type: none;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-weight: bold;
 }
 
 nav ul span{
-    background-color: #FF79DA;
+    background-color: #952cbe;
     border-radius: 50%;
     padding: 5px 10px 5px 10px;
     color: white;
@@ -33,5 +35,5 @@ nav ul i{
 }
 
 .fa-store{
-    color: #FF79DA;
+    color: #952cbe;
 }

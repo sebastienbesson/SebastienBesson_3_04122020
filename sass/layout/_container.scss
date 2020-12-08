@@ -1,1 +1,58 @@
+#restaurants{
+    background-color: #f5eaea;
+    margin-top: 75px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
 
+section2 h1{
+    font-size: 150%;
+    font-weight: bold;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.restaurant img{
+    width: 425px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.restaurant{
+    width: 90%;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgb(218, 214, 214);
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.restaurant a{
+    text-decoration: none;
+}
+.restaurant h2{
+    color: black;
+    font-weight: bolder;
+    font-size: 120%;
+    padding-left: 15px;
+    margin-block-end: 0.5em;
+}
+
+.restaurant h3{
+    color: black;
+    font-size: 120%;
+    font-weight: normal;
+    padding-left: 15px;
+    margin-block-start: 0.5em;
+}
+
+.restaurant i:hover{
+    color: #952cbe;
+}
+
+.fa-heart{
+    float: right;
+    font-size: 200%;
+    color: black;
+    padding-top: 30px;
+    padding-right: 30px;
+}

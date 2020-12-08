@@ -11,14 +11,18 @@ header h1{
 #headertop{
     font-weight: bold;
     background-color: rgb(221, 215, 215);
-    border-top: 2px rgb(236, 232, 232) inset;
     padding: 20px 0px 20px 0px;
 }
 
+.fa-map-marker-alt{
+    text-align: center;
+}
+
 #citysearch{
+    width: 40%;
     border: none;
     background-color: rgb(221, 215, 215);
-    margin: auto;
+    text-align: center;
     font-weight: bold;
     font-size: 110%;
 }
@@ -34,6 +38,8 @@ section header h1{
     font-size: 145%;
     font-family: 'roboto', sans-serif;
     font-weight: bold;
+    width: 70%;
+    padding-left: 15%;
     margin-block-start: 0rem;
 }
 
@@ -41,11 +47,12 @@ section header h2{
     background-color: rgb(241, 238, 238);
     font-size: 105%;
     font-weight: bold;
+    padding-left: 5%;
     padding-bottom: 30px;
 }
 
 #restaurantsearching{
-    background-color: #FF79DA;
+    background-color: #ff79da;
     border: none;
     border-radius: 50px;
     color: white;
