@@ -56,3 +56,14 @@ section2 h1{
     padding-top: 30px;
     padding-right: 30px;
 }
+
+.image{
+    display: inline-block;
+    position: relative;
+}
+
+.image .text{
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
