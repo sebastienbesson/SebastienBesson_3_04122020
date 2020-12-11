@@ -1,5 +1,5 @@
 #restaurants{
-    background-color: #f5eaea;
+    background-color: $backgroundgrey;
     margin-top: 75px;
     padding-top: 45px;
     padding-bottom: 45px;
@@ -12,58 +12,83 @@ section2 h1{
     margin-bottom: 15px;
 }
 
-.restaurant img{
-    width: 425px;
-    border-radius: 20px 20px 0px 0px;
-}
-
 .restaurant{
     width: 90%;
+    height: 270px;
     background-color: white;
-    box-shadow: 3px 3px 3px rgb(218, 214, 214);
+    @include boxshadow;
+    @include borderradius;
+    margin: 15px 15px 0px 15px;
+    position: relative;
     overflow: hidden;
-    border-radius: 20px;
-    margin: 15px;
+}
+
+.photorestaurant{
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.photorestaurant img{
+    width: 425px;
+    border-radius: 20px 20px 0px 0px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.photorestaurant em{
+    position: absolute;
+    z-index: 2;
+    color: green;
+    font-weight: bold;
+    font-style: normal;
+    background-color: $colourtertiary;
+    border-radius: 5px;
+    margin-left: 70%;
+    margin-top: 5%;
+    padding: 2% 4% 2% 4%;
 }
 
 .restaurant a{
     text-decoration: none;
 }
-.restaurant h2{
+
+.textrestaurant{
+    width: 100%;
+    height: 70px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: white;
+    box-shadow: 3px 3px 3px $boxshadowgrey;
+    margin: 0px 0px 0px 15px;
+    padding: 15px 0px 15px 0px;
+}
+
+.textrestaurant h2{
     color: black;
     font-weight: bolder;
     font-size: 120%;
-    padding-left: 15px;
-    margin-block-end: 0.5em;
+    padding-left: 10px;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
 }
 
-.restaurant h3{
+.textrestaurant h3{
     color: black;
     font-size: 120%;
     font-weight: normal;
-    padding-left: 15px;
-    margin-block-start: 0.5em;
+    padding-left: 10px;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
 }
 
-.restaurant i:hover{
-    color: #952cbe;
+.fa-heart:hover{
+    color: $iconemainpage;
 }
 
 .fa-heart{
     float: right;
-    font-size: 200%;
+    font-size: 170%;
     color: black;
-    padding-top: 30px;
+    padding-top: 5px;
     padding-right: 30px;
-}
-
-.image{
-    display: inline-block;
-    position: relative;
-}
-
-.image .text{
-    position: absolute;
-    text-align: center;
-    z-index: 1;
 }

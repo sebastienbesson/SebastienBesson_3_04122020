@@ -1,0 +1,17 @@
+@mixin boxshadow{
+    box-shadow: 3px 3px 3px $boxshadowgrey;
+}
+@mixin borderradius{
+    border-radius: 20px;
+}
+@mixin boxshadowhover{
+    box-shadow: 6px 6px 6px $boxshadowgrey;  
+}
+@mixin btn{
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    padding: 15px;
+}

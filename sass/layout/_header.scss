@@ -12,7 +12,7 @@ header h1{
     font-weight: bold;
     background-color: rgb(221, 215, 215);
     padding: 20px 0px 20px 0px;
-    border-top: 5px grey solid;
+    border-top: 5px rgb(138, 135, 135) solid;
 }
 
 .fa-map-marker-alt{
@@ -35,7 +35,7 @@ header h1{
 }
 
 section header h1{
-    background-color: rgb(241, 238, 238);
+    background-color: $backgroundgrey;
     font-size: 145%;
     font-family: 'roboto', sans-serif;
     font-weight: bolder;
@@ -45,19 +45,18 @@ section header h1{
 }
 
 section header h2{
-    background-color: rgb(241, 238, 238);
+    background-color: $backgroundgrey;
     font-size: 105%;
     font-weight: bold;
     padding-left: 5%;
     padding-bottom: 30px;
 }
 
-#restaurantsearching{
-    background-image: linear-gradient(#ff79da, #952cbe);
-    border: none;
-    border-radius: 50px;
-    color: white;
-    font-size: 150%;
-    font-weight: bold;
-    padding: 15px;
+.button{
+    background: $mixpurple;
+    @include btn;
+    &:hover{
+       opacity: 0.8;
+       @include boxshadowhover;
+    }
 }

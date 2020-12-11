@@ -12,19 +12,25 @@ nav span{
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
-    background-color: #f5eaea;
-    box-shadow: 3px 3px 3px rgb(218, 214, 214);
+    background-color: $backgroundgrey;
+    @include boxshadow;
     border-radius: 25px;
     list-style-type: none;
     padding-top: 30px;
     padding-bottom: 30px;
     font-weight: bold;
+    &:hover{
+        color: $iconemainpage;
+        opacity: 0.8;
+        @include boxshadowhover;
+    }
 }
 
 nav ul span{
-    background-color: #952cbe;
+    margin-left: -15px;
+    background-color: $iconemainpage;
     border-radius: 50%;
-    padding: 5px 10px 5px 10px;
+    padding: 8px 13px 8px 13px;
     color: white;
     font-size: 85%;
 }
@@ -34,6 +40,6 @@ nav ul i{
     padding-right: 25px;
 }
 
-.fa-store{
-    color: #952cbe;
-}
+
+
+

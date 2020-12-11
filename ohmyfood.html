@@ -19,7 +19,7 @@
                 <div id="headerbottom">
                 <h1>Réservez le menu qui vous convient</h1>
                 <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
-                <input type="button" name="rechercher" value="Explorer nos restaurants" id="restaurantsearching"/>
+                <input type="button" name="rechercher" value="Explorer nos restaurants" class="button"/>
                 </div>
             </header>
             <nav>
@@ -41,35 +41,55 @@
             <div id="restaurants">
             <h1>Restaurants</h1>
                 <div class="restaurant">
-                    <a href="ohmyfood2.html"> 
-                        <img src="photos/lapalettedugout.jpg" alt="plats">
-                        <i class="far fa-heart"></i>
-                        <h2>La palette du goût</h2>
-                        <h3>Ménilmontant</h3>
+                    <a href="ohmyfood2.html">
+                        <div class="photorestaurant">
+                            <img src="photos/lapalettedugout.jpg" alt="plats">
+                            <em>Nouveau</em>
+                        </div>
+                        <div class="textrestaurant">
+                            <i class="far fa-heart"></i>
+                            <h2>La palette du goût</h2>
+                            <h3>Ménilmontant</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="restaurant">
+                    <a href="ohmyfood2.html">
+                        <div class="photorestaurant">
+                            <img src="photos/lanoteenchantee.jpg" alt="plats">
+                            <em>Nouveau</em>
+                        </div>
+                        <div class="textrestaurant">
+                            <i class="far fa-heart"></i>
+                            <h2>La note enchantée</h2>
+                            <h3>Charonne</h3>
+                        </div>
+                    </a>
+                </div>
+                                
+                <div class="restaurant">
+                    <a href="ohmyfood2.html">
+                        <div class="photorestaurant">
+                            <img src="photos/alafrancaise.jpg" alt="plats">
+                        </div>
+                        <div class="textrestaurant">
+                            <i class="far fa-heart"></i>
+                            <h2>A la française</h2>
+                            <h3>Cité rouge</h3>
+                        </div>
                     </a>
                 </div>
                 <div class="restaurant">
                     <a href="ohmyfood2.html">
-                        <img src="photos/lanoteenchantee.jpg" alt="plats">
-                        <i class="far fa-heart"></i>
-                        <h2>La note enchantée</h2>
-                        <h3>Charonne</h3>
-                    </a>
-                </div>
-                <div class="restaurant">
-                    <a href="ohmyfood2.html">
-                        <img src="photos/alafrancaise.jpg" alt="plats">
-                        <i class="far fa-heart"></i>
-                        <h2>A la française</h2>
-                        <h3>Cité rouge</h3>
-                    </a>
-                </div>
-                <div class="restaurant">
-                    <a href="ohmyfood2.html">
-                        <img src="photos/ledelicedessens.jpg" alt="plats">
-                        <i class="far fa-heart"></i>
-                        <h2>Le délice des sens</h2>
-                        <h3>Folie-Méricourt</h3>
+                        <div class="photorestaurant">
+                            <img src="photos/ledelicedessens.jpg" alt="plats">
+                        </div>
+                        <div class="textrestaurant">
+                            <i class="far fa-heart"></i>
+                            <h2>Le délice des sens</h2>
+                            <h3>Folie-Méricourt</h3>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -80,7 +100,7 @@
                 <li><i class="fas fa-utensils"></i><span>Proposer un restaurant</span></li>
                 <li><i class="fas fa-hands-helping"></i><span>Devenir partenaire</span></li>
                 <li>Mentions légales</li>
-                <li>Contact</li>
+                <li><a href="mailto:sebbes06@hotmail.fr">Contact</a></li>
             </ul>
         </footer>
     </body>
