@@ -5,6 +5,11 @@
     padding-bottom: 45px;
 }
 
+section{
+    display: flex;
+    flex-direction: column;
+}
+
 section2 h1{
     font-size: 150%;
     font-weight: bold;
@@ -91,4 +96,63 @@ section2 h1{
     color: black;
     padding-top: 5px;
     padding-right: 30px;
+}
+
+section img{
+    width: 425px;
+}
+
+.menucard{
+    background-color: $backgroundgrey;
+    width: 425px;
+    border-radius: 35px 35px 0px 0px;
+    padding-top: 25px;
+}
+
+
+section span{
+    font-family: shrikhand, sans-serif;
+    font-size: 200%;
+    padding-left: 20px;
+}
+
+.menutitle{
+    font-weight: lighter;
+    font-size: 110%;
+    @include bordermenutitle;
+    margin-bottom: 15px;
+}
+
+.menu{
+    width: 90%;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    @include borderradius;
+    @include boxshadow;
+    background-color: white;
+    font-weight: bold;
+    padding: 15px 0px 15px 15px;
+}
+
+.menu em{
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 90%;
+    justify-content: left;
+}
+
+.menutext2{
+    padding-top: 5px;
+    justify-content: right;
+}
+
+.choice{
+    float: right;
+    font-size: 200%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.buttonposition{
+    margin: 45px 0px 45px 120px;
 }

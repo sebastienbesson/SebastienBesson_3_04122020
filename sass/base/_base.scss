@@ -14,5 +14,8 @@
 body{
     font-family: 'roboto', sans-serif;
     width: 425px;
+    height: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }

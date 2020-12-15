@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="public/css/style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ohmyfood2</title>
@@ -13,29 +13,113 @@
         </header>
         <section>
             <img src="photos/alafrancaise.jpg" alt="plats">
-            <span>A la française</span><i class="far fa-heart"></i>
-            <h2>ENTREES</h2>
-                <p><input type="checkbox" name="211"/><label for="211"><p>Tartare de poulpe acidulé<br />Aux zests d'orange 25€</p></label>
-                <p><input type="checkbox" name="212"/><label for="212"><p>Velouté de légumes d'antan<br />Carotte, panais, topinambour 35€</p></label>
-                <p><input type="checkbox" name="213"/><label for="213"><p>Soupe à l'oignon<br />Revisitée 20€</p></label>
-            <h2>PLATS</h2>
-                <p><input type="checkbox" name="221"/><label for="221"><p>Coquilles Saint Jacques<br />Accompagnées d'une purée de panais 40€</p></label>
-                <p><input type="checkbox" name="222"/><label for="222"><p>Magret de canard<br />Parmentier de pomme de terre 35€</p></label>
-                <p><input type="checkbox" name="223"/><label for="223"><p>Pigeonneau d'Ille-et-Vilaine<br />Sur son lit de gnochis aux légumes 44€</p></label>
-            <h2>DESSERTS</h2>
-                <p><input type="checkbox" name="231"/><label for="231"><p>Pétales de violettes glacés<br />Et purée de noisettes 18€</p></label>
-                <p><input type="checkbox" name="232"/><label for="232"><p>Fondant au chocolat<br />Revisité 22€</p></label>
-                <p><input type="checkbox" name="233"/><label for="233"><p>Millefeuille croustillant<br />Myrtilles et pâte d'amandes 23€</p></label>
-
-        <input type="button" name="rechercher" value="Commander" id="command"/>
-            
+            <div class="menucard">
+                <span>A la française</span><i class="far fa-heart"></i>
+                <div class="menutitle">ENTREES</div>
+                <div class="menu">
+                    <input type="checkbox" name="211" class="choice"><label for="211">
+                        <div class="textmenu1">
+                            Tartare de poulpe acidulé
+                        </div>
+                        <div class="textmenu2">
+                            <em>Aux zests d'orange</em>25€
+                        </div>
+                    </label>
+                </div>
+                <div class="menu">
+                    <input type="checkbox" name="212" class="choice"/><label for="212">
+                        <div class="textmenu1">
+                        Velouté de légumes d'antan
+                        </div>
+                        <div class="textmenu2">
+                            <em>Carotte, panais, topinambour</em>35€
+                        </div>
+                        </label>
+                </div>
+                <div class="menu">
+                    <input type="checkbox" name="213" class="choice"/><label for="213">
+                        <div class="textmenu1">
+                        Soupe à l'oignon
+                        </div>
+                        <div class="textmenu2">
+                            <em>Revisitée</em>20€
+                        </div>
+                        </label>
+                </div>
+                <div class="menutitle">PLATS</div>
+                <div class="menu">
+                    <input type="checkbox" name="221" class="choice"/><label for="221">
+                        <div class="textmenu1">
+                        Coquilles Saint Jacques
+                        </div>
+                        <div class="textmenu2">
+                            <em>Accompagnées d'une purée de panais</em>40€
+                        </div>
+                        </label>
+                </div>
+                <div class="menu">
+                    <input type="checkbox" name="222" class="choice"/><label for="222">
+                        <div class="textmenu1">
+                        Magret de canard
+                        </div>
+                        <div class="textmenu2">
+                            <em>Parmentier de pomme de terre</em>35€
+                        </div>
+                        </label>
+                </div>
+                <div class="menu">
+                    <input type="checkbox" name="223" class="choice"/><label for="223">
+                        <div class="textmenu1">
+                        Pigeonneau d'Ille-et-Vilaine
+                        </div>
+                        <div class="textmenu2">
+                            <em>Sur son lit de gnochis aux légumes</em>44€
+                        </div>
+                        </label>
+                </div>
+                <div class="menutitle">DESSERTS</div>
+                <div class="menu">
+                    <input type="checkbox" name="231" class="choice"/><label for="231">
+                        <div class="textmenu1">
+                        Pétales de violettes glacés
+                        </div>
+                        <div class="textmenu2">
+                            <em>Et purée de noisettes</em>18€
+                        </div>
+                        </label>
+                </div>
+                <div class="menu">
+                    <input type="checkbox" name="232" class="choice"/><label for="232">
+                        <div class="textmenu1">
+                        Fondant au chocolat
+                        </div>
+                        <div class="textmenu2">
+                            <em>Revisité</em>22€
+                        </div>
+                        </label>
+                </div>
+                <div class="menu">
+                    <input type="checkbox" name="233" class="choice"/><label for="233">
+                        <div class="textmenu1">
+                        Millefeuille croustillant
+                        </div>
+                        <div class="textmenu2">
+                            <em>Myrtilles et pâte d'amandes</em>23€
+                        </div>
+                        </label>
+                </div>
+                <div class="buttonposition">
+                <input type="button" name="rechercher" value="Commander" class="button"/>
+                </div>
+            </div>
+        </section>  
         <footer>
             <h1>ohmyfood</h1>
             <ul>
                 <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
                 <li><i class="fas fa-hands-helping"></i>Devenir Partenaire</li>
                 <li>Mentions légales</li>
-                <li>Contact</li>
+                <li><a href="mailto:sebbes06@hotmail.fr">Contact</a></li>
             </ul>
         </footer>
     </body>

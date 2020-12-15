@@ -8,6 +8,12 @@ header h1{
     text-align: center;
 }
 
+header a{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
 #headertop{
     font-weight: bold;
     background-color: rgb(221, 215, 215);
@@ -29,27 +35,24 @@ header h1{
 }
 
 #headerbottom{
-    background-color: rgb(241, 238, 238);
+    background: $backgroundgrey;
     padding-top: 45px;
     padding-bottom: 55px;
-}
-
-section header h1{
-    background-color: $backgroundgrey;
-    font-size: 145%;
-    font-family: 'roboto', sans-serif;
-    font-weight: bolder;
-    width: 70%;
-    padding-left: 15%;
-    margin-block-start: 0rem;
-}
-
-section header h2{
-    background-color: $backgroundgrey;
-    font-size: 105%;
-    font-weight: bold;
-    padding-left: 5%;
-    padding-bottom: 30px;
+    #headerbottomtext1{
+        font-size: 145%;
+        font-family: 'roboto', sans-serif;
+        font-weight: bolder;
+        width: 70%;
+        padding-left: 15%;
+        margin-block-start: 0rem;
+    }
+    #headerbottomtext2{
+        font-size: 105%;
+        font-weight: bold;
+        padding-left: 5%;
+        padding-bottom: 30px;
+        border-bottom: none;
+    }
 }
 
 .button{
