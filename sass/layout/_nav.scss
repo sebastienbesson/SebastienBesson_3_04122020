@@ -7,6 +7,7 @@ nav{
     font-weight: bold;
     font-size: 150%;
     padding-left: 35px;
+    @include tabletnavtitle;
 }
 
 .navlist{
@@ -25,6 +26,7 @@ nav{
         opacity: 0.8;
         @include boxshadowhover;
     }
+    @include tabletnavlist;
 }
 
 nav ul span{

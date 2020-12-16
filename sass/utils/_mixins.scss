@@ -25,3 +25,43 @@
     width: 768px;
     margin: auto;
 }
+@mixin tabletnavtitle{
+    @media all and (min-width: 426px) and (max-width: 768px){
+        text-align: center;
+        font-size: 200%;
+    }
+}
+@mixin tabletnavlist{
+    @media all and (min-width: 426px) and (max-width: 768px){
+        width: 70%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+}
+@mixin tabletmenutitle{
+    @media all and (min-width: 426px) and (max-width: 768px){
+        margin-left: 110px;
+    }
+}
+
+@mixin tabletbutton{
+    @media all and (min-width: 426px) and (max-width: 768px){
+        justify-content: center;
+        text-align: center;
+        margin-left: 0px;
+    } 
+}
+@mixin footerresponsive{
+    @media all and (min-width: 426px) and (max-width: 768px){
+        display: flex;
+        justify-content: space-between;
+        margin: 25px;
+    } 
+}
+@mixin footertitle{
+    @media all and (min-width: 426px) and (max-width: 768px){
+        text-align: center;
+        padding-left: 0px;
+        font-size: 200%;
+    } 
+}
