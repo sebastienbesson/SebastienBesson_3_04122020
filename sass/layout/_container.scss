@@ -39,6 +39,7 @@ section2 h1{
     position: absolute;
     overflow: hidden;
     z-index: 1;
+    @include tabletwidth;
 }
 
 .photorestaurant em{
@@ -100,6 +101,7 @@ section2 h1{
 
 section img{
     width: 425px;
+    @include tabletwidth;
 }
 
 .menucard{
@@ -107,6 +109,7 @@ section img{
     width: 425px;
     border-radius: 35px 35px 0px 0px;
     padding-top: 25px;
+    @include tabletwidth;
 }
 
 
@@ -121,6 +124,7 @@ section span{
     margin-bottom: 15px;
     padding-bottom: 0px;
     font-weight: lighter;
+    @include tabletmenutitle;
     
 }
 
@@ -133,6 +137,7 @@ section span{
     background-color: white;
     font-weight: bold;
     padding: 15px 0px 15px 15px;
+    @include tabletnavlist;
 }
 
 .menu em{
@@ -156,4 +161,5 @@ section span{
 
 .buttonposition{
     margin: 45px 0px 45px 120px;
+    @include tabletbutton;
 }
