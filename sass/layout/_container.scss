@@ -117,10 +117,11 @@ section span{
 }
 
 .menutitle{
-    font-weight: lighter;
-    font-size: 110%;
     @include bordermenutitle;
     margin-bottom: 15px;
+    padding-bottom: 0px;
+    font-weight: lighter;
+    
 }
 
 .menu{

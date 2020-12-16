@@ -2,40 +2,39 @@ footer{
     background-color: black;
     color: white;
     width: 100%;
-}
-
-footer h1{
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-bottom: 20px;
-    font-family: 'shrikhand', sans-serif;
-    font-size: 120%;
-    font-weight: normal;
-    margin-block: 0em;
-}
-
-footer ul{
-    list-style-type: none;
-    padding-left: 25px;
-    padding-bottom: 25px;
-    margin-block: 0em;
-}
-
-footer li{
-    font-size: 90%;
-    padding: 5px;
-}
-
-footer span{
-    font-weight: bold;
-    padding-left: 10px;
+        h1{
+            padding-top: 25px;
+            padding-left: 25px;
+            padding-bottom: 20px;
+            font-family: 'shrikhand', sans-serif;
+            font-size: 120%;
+            font-weight: normal;
+            margin-block: 0em;
+        }
+        ul{
+            list-style-type: none;
+            padding-left: 25px;
+            padding-bottom: 25px;
+            margin-block: 0em;
+        }
+        li{
+            font-size: 90%;
+            padding: 5px;
+        }
+        i{
+            padding-right: 10px;
+        }
+        span{
+            font-weight: bold;
+            padding-left: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
 }
 
 .fa-hands-helping{
     font-size: 70%;
 }
 
-footer a{
-    text-decoration: none;
-    color: white;
-}
