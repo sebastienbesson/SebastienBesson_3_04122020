@@ -107,6 +107,15 @@ section img{
     width: 100%;
 }
 
+.menutop{
+    background-color: $backgroundgrey;
+    font-family: shrikhand, sans-serif;
+    border-radius: 35px 35px 0px 0px;
+    font-size: 200%;
+    padding-left: 20px;
+    @include menutopresponsive;
+}
+
 .menucardlist{
     @include menucardlistresponsive;
 }
@@ -117,15 +126,6 @@ section img{
     padding-top: 25px;
     @include tabletwidth;
     @include menucardresponsive;
-}
-
-.menutop{
-    background-color: $backgroundgrey;
-    font-family: shrikhand, sans-serif;
-    border-radius: 35px 35px 0px 0px;
-    font-size: 200%;
-    padding-left: 20px;
-    @include menutopresponsive;
 }
 
 .menutitle{
