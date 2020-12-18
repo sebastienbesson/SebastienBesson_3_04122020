@@ -2,6 +2,7 @@ header h1{
     font-family: 'shrikhand', sans-serif;
     font-size: 200%;
     text-align: center;
+    @include headerresponsive;
 }
 
 header a{
@@ -19,6 +20,7 @@ section header{
     background-color: rgb(221, 215, 215);
     padding: 20px 0px 20px 0px;
     border-top: 5px rgb(138, 135, 135) solid;
+    @include headertopresponsive;
 }
 
 .fa-map-marker-alt{
@@ -45,14 +47,17 @@ section header{
         width: 70%;
         padding-left: 15%;
         margin-block-start: 0rem;
+        @include headertopresponsive;
     }
     & h2{
         font-size: 105%;
         font-weight: lighter;
-        padding-left: 8%;
+        padding-left: 0%;
         padding-bottom: 30px;
         border-bottom: none;
+        @include headertopresponsive;
     }
+    
 }
 
 .fa-arrow-left{

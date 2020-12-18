@@ -1,37 +1,40 @@
-#restaurants{
-    background-color: $backgroundgrey;
-    margin-top: 75px;
-    padding-top: 45px;
-    padding-bottom: 45px;
-}
-
 section{
     display: flex;
     flex-direction: column;
 }
 
 section2 h1{
+    background-color: $backgroundgrey;
     font-size: 150%;
     font-weight: bold;
-    padding-left: 15px;
-    margin-bottom: 15px;
+    padding: 35px 0px 0px 15px;
+    margin-block-end: 0px;
+}
+
+#restaurants{
+    background-color: $backgroundgrey;
+    padding-top: 25px;
+    padding-bottom: 45px;
+    @include restaurantsresponsive;
 }
 
 .restaurant{
     width: 90%;
-    height: 270px;
+    height: 200px;
     background-color: white;
     @include boxshadow;
     @include borderradius;
     margin: 15px 15px 0px 15px;
     position: relative;
     overflow: hidden;
+    @include tabletrestaurant;
 }
 
 .photorestaurant{
-    height: 200px;
+    height: 140px;
     position: relative;
     overflow: hidden;
+    
 }
 .photorestaurant img{
     width: 425px;
@@ -50,7 +53,7 @@ section2 h1{
     font-style: normal;
     background-color: $colourtertiary;
     border-radius: 5px;
-    margin-left: 70%;
+    margin-left: 65%;
     margin-top: 5%;
     padding: 2% 4% 2% 4%;
 }
@@ -61,12 +64,13 @@ section2 h1{
 
 .textrestaurant{
     width: 100%;
-    height: 70px;
+    height: 60px;
     border-radius: 0px 0px 20px 20px;
     background-color: white;
     box-shadow: 3px 3px 3px $boxshadowgrey;
     margin: 0px 0px 0px 15px;
-    padding: 15px 0px 15px 0px;
+    padding: 5px 0px 15px 0px;
+    @include textrestaurantresponsive;
 }
 
 .textrestaurant h2{
@@ -100,23 +104,28 @@ section2 h1{
 }
 
 section img{
-    width: 425px;
-    @include tabletwidth;
+    width: 100%;
+}
+
+.menucardlist{
+    @include menucardlistresponsive;
 }
 
 .menucard{
     background-color: $backgroundgrey;
     width: 425px;
-    border-radius: 35px 35px 0px 0px;
     padding-top: 25px;
     @include tabletwidth;
+    @include menucardresponsive;
 }
 
-
-section span{
+.menutop{
+    background-color: $backgroundgrey;
     font-family: shrikhand, sans-serif;
+    border-radius: 35px 35px 0px 0px;
     font-size: 200%;
     padding-left: 20px;
+    @include menutopresponsive;
 }
 
 .menutitle{
@@ -137,7 +146,7 @@ section span{
     background-color: white;
     font-weight: bold;
     padding: 15px 0px 15px 15px;
-    @include tabletnavlist;
+    @include menuresponsive;
 }
 
 .menu em{
@@ -160,6 +169,8 @@ section span{
 }
 
 .buttonposition{
-    margin: 45px 0px 45px 120px;
+    background-color: $backgroundgrey;
+    padding: 45px 0px 45px 0px;
+    text-align: center;
     @include tabletbutton;
 }

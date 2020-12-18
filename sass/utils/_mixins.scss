@@ -21,47 +21,141 @@
     margin-left: 10px;
     padding-top: 25px;
 }
+@mixin headerresponsive{
+    @media all and (min-width: 1990px){
+        font-size: 300%;
+    }  
+}
+@mixin headertopresponsive{
+    @media all and (min-width: 1990px){
+        font-size: 200%;
+    }  
+}
 @mixin tabletwidth{
-    width: 768px;
+    width: 100%;
     margin: auto;
 }
 @mixin tabletnavtitle{
-    @media all and (min-width: 426px) and (max-width: 768px){
+    @media all and (min-width: 426px){
         text-align: center;
         font-size: 200%;
     }
 }
 @mixin tabletnavlist{
-    @media all and (min-width: 426px) and (max-width: 768px){
+    @media all and (min-width: 426px){
         width: 70%;
         margin: auto;
         margin-bottom: 15px;
     }
+    @media all and (min-width: 1024px){
+        width: 50%;
+    }
+    @media all and (min-width: 1326px){
+        width: 40%;
+    }
+    @media all and (min-width: 1990px){
+        width: 30%;
+        font-size: 150%;
+    }
+}
+@mixin tabletrestaurant{
+    @media all and (min-width: 426px){
+        width: 70%;
+        margin-left: 35px;
+    }   
+    @media all and (min-width: 1024px){
+        width: 25%;
+        font-size: 90%;
+    }
+    @media all and (min-width: 1990px){
+        width: 25%;
+        font-size: 120%;
+    }
 }
 @mixin tabletmenutitle{
-    @media all and (min-width: 426px) and (max-width: 768px){
+    @media all and (min-width: 426px){
         margin-left: 110px;
+    }
+    @media all and (min-width: 1990px){
+        font-size: 150%;
     }
 }
 
 @mixin tabletbutton{
-    @media all and (min-width: 426px) and (max-width: 768px){
+    @media all and (min-width: 426px){
         justify-content: center;
         text-align: center;
         margin-left: 0px;
     } 
 }
 @mixin footerresponsive{
-    @media all and (min-width: 426px) and (max-width: 768px){
+    @media all and (min-width: 426px){
         display: flex;
         justify-content: space-between;
         margin: 25px;
     } 
+    @media all and (min-width: 1990px){
+        display: flex;
+        justify-content: space-between;
+        margin: 25px;
+        font-size: 200%;
+    } 
 }
 @mixin footertitle{
-    @media all and (min-width: 426px) and (max-width: 768px){
+    @media all and (min-width: 426px){
         text-align: center;
         padding-left: 0px;
         font-size: 200%;
     } 
+    @media all and (min-width: 1990px){
+        text-align: center;
+        padding-left: 0px;
+        font-size: 300%;
+    } 
+}
+@mixin restaurantsresponsive{
+    @media all and (min-width: 1024px){
+        display: flex;
+    }
+}
+@mixin textrestaurantresponsive{
+    @media all and (min-width: 1024px){
+        font-size: 85%;
+    }
+}
+@mixin menutopresponsive{
+    @media all and (max-width: 424px){
+        font-size: 150%;
+    }
+    @media all and (min-width: 1990px){
+        font-size: 400%;
+        padding: 0px 80px 0px 80px;
+    }
+}
+@mixin menucardresponsive{
+    @media all and (min-width: 1326px){
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }  
+}
+@mixin menucardlistresponsive{
+    @media all and (min-width: 1326px){
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+    }   
+}
+@mixin menuresponsive{
+    @media all and (min-width: 426px){
+        width: 70%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    @media all and (min-width: 1990px){
+        width: 80%;
+        margin: auto;
+        margin-bottom: 15px;
+        font-size: 150%;
+    }
 }
