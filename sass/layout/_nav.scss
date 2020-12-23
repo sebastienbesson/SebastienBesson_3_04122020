@@ -7,7 +7,10 @@ nav{
     font-weight: bold;
     font-size: 150%;
     padding-left: 35px;
-    @include tabletnavtitle;
+    @media all and (min-width: 426px){
+        text-align: center;
+        font-size: 200%;
+    }
 }
 
 .navlist{
@@ -26,7 +29,22 @@ nav{
         opacity: 0.8;
         @include boxshadowhover;
     }
-    @include tabletnavlist;
+    @media all and (min-width: 426px){
+        width: 70%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    @media all and (min-width: 1024px){
+        width: 50%;
+    }
+    @media all and (min-width: 1326px){
+        width: 40%;
+    }
+    @media all and (min-width: 1990px){
+        width: 30%;
+        font-size: 150%;
+    }
+
 }
 
 nav ul span{

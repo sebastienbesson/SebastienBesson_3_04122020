@@ -2,7 +2,6 @@ section{
     display: flex;
     flex-direction: column;
 }
-
 section2 h1{
     background-color: $backgroundgrey;
     font-size: 150%;
@@ -10,14 +9,14 @@ section2 h1{
     padding: 35px 0px 0px 15px;
     margin-block-end: 0px;
 }
-
 #restaurants{
     background-color: $backgroundgrey;
     padding-top: 25px;
     padding-bottom: 45px;
-    @include restaurantsresponsive;
+    @media all and (min-width: 1024px){
+        display: flex;
+    }
 }
-
 .restaurant{
     width: 90%;
     height: 200px;
@@ -27,14 +26,23 @@ section2 h1{
     margin: 15px 15px 0px 15px;
     position: relative;
     overflow: hidden;
-    @include tabletrestaurant;
+    @media all and (min-width: 426px){
+        width: 70%;
+        margin-left: 35px;
+    }   
+    @media all and (min-width: 1024px){
+        width: 25%;
+        font-size: 90%;
+    }
+    @media all and (min-width: 1990px){
+        width: 25%;
+        font-size: 120%;
+    }
 }
-
 .photorestaurant{
     height: 140px;
     position: relative;
-    overflow: hidden;
-    
+    overflow: hidden;  
 }
 .photorestaurant img{
     width: 425px;
@@ -44,7 +52,6 @@ section2 h1{
     z-index: 1;
     @include tabletwidth;
 }
-
 .photorestaurant em{
     position: absolute;
     z-index: 2;
@@ -57,11 +64,9 @@ section2 h1{
     margin-top: 5%;
     padding: 2% 4% 2% 4%;
 }
-
 .restaurant a{
     text-decoration: none;
 }
-
 .textrestaurant{
     width: 100%;
     height: 60px;
@@ -70,9 +75,10 @@ section2 h1{
     box-shadow: 3px 3px 3px $boxshadowgrey;
     margin: 0px 0px 0px 15px;
     padding: 5px 0px 15px 0px;
-    @include textrestaurantresponsive;
+    @media all and (min-width: 1024px){
+        display: flex;
+    }
 }
-
 .textrestaurant h2{
     color: black;
     font-weight: bolder;
@@ -81,7 +87,6 @@ section2 h1{
     margin-block-start: 0rem;
     margin-block-end: 0rem;
 }
-
 .textrestaurant h3{
     color: black;
     font-size: 120%;
@@ -90,11 +95,9 @@ section2 h1{
     margin-block-start: 0rem;
     margin-block-end: 0rem;
 }
-
 .fa-heart:hover{
     color: $iconemainpage;
 }
-
 .fa-heart{
     float: right;
     font-size: 170%;
@@ -102,75 +105,114 @@ section2 h1{
     padding-top: 5px;
     padding-right: 30px;
 }
-
 section img{
     width: 100%;
 }
-
 .menutop{
     background-color: $backgroundgrey;
     font-family: shrikhand, sans-serif;
     border-radius: 35px 35px 0px 0px;
     font-size: 200%;
     padding-left: 20px;
-    @include menutopresponsive;
+    @media all and (max-width: 424px){
+        font-size: 150%;
+    }
+    @media all and (min-width: 1990px){
+        font-size: 400%;
+        padding: 0px 80px 0px 80px;
+    }
 }
-
 .menucardlist{
-    @include menucardlistresponsive;
+    @media all and (min-width: 1326px){
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+    }
 }
-
 .menucard{
     background-color: $backgroundgrey;
     width: 425px;
     padding-top: 25px;
     @include tabletwidth;
-    @include menucardresponsive;
+    @media all and (min-width: 1326px){
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
 }
-
 .menutitle{
     @include bordermenutitle;
     margin-bottom: 15px;
     padding-bottom: 0px;
-    font-weight: lighter;
-    @include tabletmenutitle;
-    
+    font-weight: lighter;  
+    @media all and (min-width: 426px){
+        margin-left: 110px;
+    }
+    @media all and (min-width: 1990px){
+        font-size: 150%;
+    }
 }
-
 .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 90%;
     margin-left: 10px;
     margin-bottom: 15px;
     @include borderradius;
     @include boxshadow;
     background-color: white;
-    font-weight: bold;
     padding: 15px 0px 15px 15px;
-    @include menuresponsive;
+    @media all and (min-width: 426px){
+        width: 70%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    @media all and (min-width: 1990px){
+        width: 80%;
+        margin: auto;
+        margin-bottom: 15px;
+        font-size: 150%;
+    }
 }
-
-.menu em{
+.menutext{
+    width: 100%;
+}
+.menutext1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 110%;
+}
+.menutextmove{
+    display: flex;
+}
+.menutext2{
     font-style: normal;
     font-weight: lighter;
-    font-size: 90%;
-    justify-content: left;
 }
-
-.menutext2{
-    padding-top: 5px;
-    justify-content: right;
+.menuprice{
+    font-weight: bolder;
+}
+.menuoption{
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .choice{
     float: right;
     font-size: 200%;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .buttonposition{
     background-color: $backgroundgrey;
     padding: 45px 0px 45px 0px;
     text-align: center;
-    @include tabletbutton;
+    @media all and (min-width: 426px){
+        justify-content: center;
+        text-align: center;
+        margin-left: 0px;
+    } 
 }
