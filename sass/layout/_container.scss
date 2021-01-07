@@ -132,7 +132,10 @@ section img{
     z-index: 0;
     position: relative;
     @media all and (min-width: 1326px){
-        height: 100px;
+        height: 250px;
+    }
+    @media all and (min-width: 1990px){
+        height: 350px;
     }
 }
 .menutop{
@@ -220,7 +223,7 @@ section img{
         margin-bottom: 15px;
     }
     @media all and (min-width: 1990px){
-        width: 80%;
+        width: 90%;
         margin: auto;
         margin-bottom: 15px;
         font-size: 150%;
