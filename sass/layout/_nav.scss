@@ -42,7 +42,7 @@ nav{
     }
     @media all and (min-width: 1990px){
         width: 30%;
-        font-size: 150%;
+        font-size: 200%;
     }
 
 }
@@ -60,6 +60,9 @@ nav ul span{
 nav ul i{
     padding-left: 15px;
     padding-right: 25px;
+    @media all and (max-width: 374px){
+        padding-right: 15px;
+    }
 }
 
 
