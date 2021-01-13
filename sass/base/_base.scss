@@ -18,3 +18,32 @@ body{
     display: flex;
     flex-direction: column;
 }
+.loader{
+    position: fixed;
+    z-index: 9999;
+    background: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    animation: load 3000ms forwards;
+}
+.loaderball1{
+    width: 100px;
+    height: 100px;
+    background-color: $colourprimary;
+    animation: loader 2000ms both;
+}
+.loaderball2{
+    width: 100px;
+    height: 100px;
+    background-color: $coloursecondary;
+    animation: loader2 2000ms both;
+}
+.loaderball3{
+    width: 100px;
+    height: 100px;
+    background-color: $colourtertiary;
+    animation: loader 2000ms both;
+}

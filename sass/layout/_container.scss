@@ -124,6 +124,7 @@ section2 h1{
     float: right;
     font-size: 170%;
     color: white;
+    border-color: $colourprimary;
     padding-top: 5px;
     padding-right: 30px;
 }
@@ -167,7 +168,7 @@ section img{
     }
 }
 .menucard{
-    animation: menucard 3000ms;
+    animation: menucard 1000ms ease-in-out 200ms backwards;
     background-color: $backgroundgrey;
     width: 425px;
     padding-top: 25px;
@@ -200,15 +201,21 @@ section img{
     overflow: hidden;
     @include borderradius;
     @include boxshadow;
-    :hover{
-        & > .menuchoice{
+    &:hover{
+        .menuchoice{
             transform: translateX(-100%);
         }
-        & > .menuprice{
+        .menuprice{
             transform: translateX(-100%);
         }
-        & > .fa-check-circle{
+        .fa-check-circle{
             transform: rotate(1turn);
+        }
+        .menutext2{
+            animation: menutext 1000ms ease-in-out forwards;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
     }
     background-color: white;
@@ -243,9 +250,11 @@ section img{
     }
 }
 .menutext2{
+    width: 100%;
     font-style: normal;
     font-weight: lighter;
     padding: 2% 0% 3% 10%;
+    transform: scaleX(1);
     @media all and (max-width: 424px){
         font-size: 80%;
         padding: 5% 0% 5% 5%;
@@ -261,7 +270,7 @@ section img{
         font-weight: bolder;
         width: 70%;
         padding: 50% 15% 10% 10%;
-        transition: transform 2000ms ease-in-out;
+        transition: transform 1000ms ease-in-out;
         @media all and (max-width: 374px){
             width: 50%;
         }   
@@ -275,7 +284,7 @@ section img{
         border-radius: 0px 20px 20px 0px;
         width: 100px;
         height: 100%;
-        transition: transform 2000ms ease-in-out;
+        transition: transform 1000ms ease-in-out;
     }
 } 
 
