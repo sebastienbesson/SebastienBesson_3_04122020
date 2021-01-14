@@ -13,7 +13,7 @@ header a{
     margin-top: 10px;
 }
 
-section header{
+aside header{
     text-align: center;
 }
 
@@ -44,7 +44,7 @@ section header{
     background: $backgroundgrey;
     padding-top: 45px;
     padding-bottom: 55px;
-    & h1{
+    & h2{
         font-size: 25px;
         font-weight: bolder;
         font-family: 'robotregular', sans-serif;
@@ -55,7 +55,7 @@ section header{
             font-size: 200%;
         } 
     }
-    & h2{
+    & h3{
         font-size: 105%;
         font-weight: lighter;
         padding-left: 0%;
