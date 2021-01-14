@@ -30,20 +30,23 @@ body{
     animation: load 3000ms forwards;
 }
 .loaderball1{
-    width: 100px;
-    height: 100px;
+    width: 33%;
+    height: 100%;
     background-color: $colourprimary;
     animation: loader 2000ms both;
+    border-radius: 100%;
 }
 .loaderball2{
-    width: 100px;
-    height: 100px;
+    width: 33%;
+    height: 100%;
     background-color: $coloursecondary;
     animation: loader2 2000ms both;
+    border-radius: 100%;
 }
 .loaderball3{
-    width: 100px;
-    height: 100px;
+    width: 33%;
+    height: 100%;
     background-color: $colourtertiary;
     animation: loader 2000ms both;
+    border-radius: 100%;
 }
