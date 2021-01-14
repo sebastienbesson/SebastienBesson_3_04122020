@@ -1,13 +1,9 @@
-aside{
-    display: flex;
-    flex-direction: column;
-}
 section h4{
     background-color: $backgroundgrey;
     font-size: 150%;
     font-weight: bold;
     padding: 35px 0px 0px 15px;
-    margin-block-end: 0px;
+    margin-bottom: 0px;
     @media all and (min-width: 1990px){
         font-size: 250%;
     }
@@ -105,16 +101,15 @@ section h4{
     font-weight: bolder;
     font-size: 120%;
     padding-left: 10px;
-    margin-block-start: 0rem;
-    margin-block-end: 0rem;
+    margin: 0.5px;
+
 }
 .textrestaurant h6{
     color: black;
     font-size: 120%;
     font-weight: normal;
     padding-left: 10px;
-    margin-block-start: 0rem;
-    margin-block-end: 0rem;
+    margin: 0.5px;
 }
 .fa-heart:hover{
     color: $iconemainpage;
@@ -125,6 +120,7 @@ section h4{
     font-size: 170%;
     color: white;
     border-color: $colourprimary;
+    border: 2px;
     padding-top: 5px;
     padding-right: 30px;
 }
@@ -159,6 +155,8 @@ section img{
     }
     i{
         color: $iconemainpage;
+        padding-right: 15px;
+        padding-top: 0px;
     }
 }
 .menucardlist{
@@ -173,6 +171,7 @@ section img{
     background-color: $backgroundgrey;
     width: 425px;
     padding-top: 25px;
+    margin-bottom: 25px;
     @include tabletwidth;
     @media all and (min-width: 1326px){
         display: flex;
@@ -210,7 +209,7 @@ section img{
             transform: translateX(-100%);
         }
         .fa-check-circle{
-            transform: rotate(1turn);
+            transform: rotate(360deg);
         }
         .menutext1{
             animation: menutext 1000ms ease-in-out forwards;
