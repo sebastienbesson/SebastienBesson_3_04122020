@@ -213,9 +213,13 @@ section img{
     &:hover{
         .menuchoice{
             transform: translateX(-100%);
+            @media all and (max-width: 374px){
+                transform: translateX(-70%);
+            }
         }
         .menuprice{
             transform: translateX(-100%);
+
         }
         .fa-check-circle{
             transform: rotate(360deg);
