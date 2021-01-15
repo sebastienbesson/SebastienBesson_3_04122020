@@ -142,15 +142,15 @@ section img{
     z-index: 1;
     position: relative;
     margin-top: -30px;
-    font-size: 200%;
+    font-size: 150%;
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 30px;
     @media all and (max-width: 424px){
-        font-size: 150%;
+        font-size: 110%;
     }
     @media all and (min-width: 1990px){
-        font-size: 400%;
+        font-size: 300%;
         padding: 45px 80px 45px 80px;
     }
     i{
