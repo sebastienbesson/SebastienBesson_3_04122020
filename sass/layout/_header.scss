@@ -13,11 +13,8 @@ header a{
     margin-top: 10px;
 }
 
-aside header{
-    text-align: center;
-}
-
 #headertop{
+    text-align: center;
     font-weight: bold;
     background-color: $headertopbg;
     padding: 20px 0px 20px 0px;
@@ -41,6 +38,7 @@ aside header{
 }
 
 #headerbottom{
+    text-align: center;
     background: $backgroundgrey;
     padding-top: 45px;
     padding-bottom: 55px;
@@ -68,5 +66,8 @@ aside header{
 .fa-arrow-left{
     margin-top: 20px;
     color: black;
+    @media all and (min-width: 1990px){
+        font-size: 200%;
+    }
 }
 

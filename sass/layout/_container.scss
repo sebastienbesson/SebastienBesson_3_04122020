@@ -88,12 +88,6 @@ section h4{
     box-shadow: 3px 3px 3px $boxshadowgrey;
     margin: 0px 0px 0px 15px;
     padding: 5px 0px 15px 0px;
-    button{
-        float: right;
-        border: 2px;
-        :hover{
-            color: $iconemainpage;
-        }
     }
 }
 .textrestaurant h5{
@@ -118,9 +112,7 @@ section h4{
 .fa-heart{
     float: right;
     font-size: 170%;
-    color: white;
-    border-color: $colourprimary;
-    border: 2px;
+    color: rgb(195, 189, 189);
     padding-top: 5px;
     padding-right: 30px;
 }
@@ -141,22 +133,40 @@ section img{
     border-radius: 35px 35px 0px 0px;
     z-index: 1;
     position: relative;
-    margin-top: -30px;
-    font-size: 150%;
-    padding-top: 20px;
+    margin-top: -35px;
     padding-left: 20px;
     padding-bottom: 30px;
+    display: flex;
     @media all and (max-width: 424px){
-        font-size: 110%;
+        font-size: 90%;
     }
     @media all and (min-width: 1990px){
         font-size: 300%;
         padding: 45px 80px 45px 80px;
     }
+    h2{
+        width: 70%;
+        font-size: 150%;
+    }
     i{
+        float: right;
         color: $iconemainpage;
-        padding-right: 15px;
-        padding-top: 0px;
+        padding: 15px 25px 25px 35px;
+        @media all and (min-width: 375px){
+            padding-left: 55px;
+        }
+        @media all and (min-width: 768px){
+            padding-left: 135px;
+        }
+        @media all and (min-width: 1024px){
+            padding-left: 200px;
+        }
+        @media all and (min-width: 1326px){
+            padding-left: 350px;
+        }
+        @media all and (min-width: 1990px){
+            padding-left: 500px;
+        }
     }
 }
 .menucardlist{
@@ -225,6 +235,10 @@ section img{
         }
     }
     background-color: white;
+    @media all and (max-width: 767px){
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
     @media all and (min-width: 426px){
         width: 70%;
         margin: auto;
