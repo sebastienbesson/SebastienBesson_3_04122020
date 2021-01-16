@@ -213,13 +213,21 @@ section img{
     &:hover{
         .menuchoice{
             transform: translateX(-100%);
-            @media all and (max-width: 374px){
-                transform: translateX(-70%);
+            @media all and (min-width: 768px){
+                transform: translateX(-120%);
+            }
+            @media all and (min-width: 1325px){
+                transform: translateX(-120%);
+            }
+            @media all and (min-width: 1989px){
+                transform: translateX(-95%);
             }
         }
         .menuprice{
             transform: translateX(-100%);
-
+            @media all and (max-width: 424px){
+                transform: translateX(-140%);
+            }
         }
         .fa-check-circle{
             transform: rotate(360deg);
@@ -296,14 +304,14 @@ section img{
         padding: 50% 15% 10% 10%;
         transition: transform 1000ms ease-in-out;
         @media all and (max-width: 374px){
-            width: 75%;
+            width: 85%;
         }   
     }
     .menuchoice{
         background-color: $colourtertiary;
         margin-right: -155%;
         @media all and (max-width: 374px){
-            margin-right: -155%;
+            margin-right: -160%;
         }   
         border-radius: 0px 20px 20px 0px;
         width: 100px;
