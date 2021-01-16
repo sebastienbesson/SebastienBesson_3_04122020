@@ -31,6 +31,7 @@ body{
 .loaderball1{
     width: 33%;
     height: 100%;
+    margin: auto;
     background-color: $colourprimary;
     animation: loader 2000ms both;
     border-radius: 100%;
