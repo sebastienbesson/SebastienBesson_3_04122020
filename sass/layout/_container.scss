@@ -146,6 +146,9 @@ section img{
     h2{
         width: 70%;
         font-size: 150%;
+        @media all and (max-width: 374px){
+            font-size: 140%;
+        }
     }
     i{
         float: right;
@@ -216,11 +219,21 @@ section img{
             @media all and (min-width: 768px){
                 transform: translateX(-120%);
             }
-            @media all and (min-width: 1326px){
+            @media all and (min-width: 1024px){
                 transform: translateX(-110%);
+                width: 140px;
+            }
+            @media all and (min-width: 1326px){
+                transform: translateX(-100%);
+                width: 100px;
             }
             @media all and (min-width: 1990px){
                 transform: translateX(-120%);
+                width: 120px;
+            }
+            @media all and (min-width: 2560px){
+                transform: translateX(-120%);
+                width: 150px;
             }
         }
         .menuprice{
@@ -286,10 +299,13 @@ section img{
     font-style: normal;
     font-weight: lighter;
     padding: 2% 0% 3% 10%;
-    transform: scaleX(1);
     @media all and (max-width: 424px){
         font-size: 80%;
         padding: 5% 0% 5% 5%;
+        width: 90%;
+    }
+    @media all and (min-width: 425px) and (max-width: 767px){
+        font-size: 90%;
     }
 }
 .menuoption{

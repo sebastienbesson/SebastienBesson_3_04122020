@@ -42,6 +42,17 @@
         width: 50%;
     }
 }
+@keyframes menutextreturn{
+    0%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    100%{
+        width: 100%;
+    }
+}
 @keyframes load{
     0%{
         display: flex;
