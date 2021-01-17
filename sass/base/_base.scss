@@ -31,13 +31,15 @@ body{
 }
 .loaderball1{
     width: 33%;
-    height: 100%;
+    height: 33%;
     margin: auto;
-    background-color: $colourprimary;
+    background-color: white;
+    border: 5px $colourprimary solid;
     animation: loader 2000ms both;
     border-radius: 100%;
 }
 .loaderball2{
+    display: none;
     width: 33%;
     height: 100%;
     background-color: $coloursecondary;
@@ -45,6 +47,7 @@ body{
     border-radius: 100%;
 }
 .loaderball3{
+    display: none;
     width: 33%;
     height: 100%;
     background-color: $colourtertiary;
