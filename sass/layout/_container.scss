@@ -252,7 +252,8 @@ section img{
             overflow: hidden;
         }
         .menutext2{
-            animation: menutext 500ms ease-in-out forwards;
+            transform: translateX(-50%);
+            transform-origin: 0% 50%;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -299,6 +300,7 @@ section img{
     font-style: normal;
     font-weight: lighter;
     padding: 2% 0% 3% 10%;
+    transition: transform 500ms ease-in-out;
     @media all and (max-width: 424px){
         font-size: 80%;
         padding: 5% 0% 5% 5%;
