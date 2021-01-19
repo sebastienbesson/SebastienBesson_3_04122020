@@ -1,5 +1,7 @@
 nav{
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
 }
 
 #navtitle{
@@ -7,6 +9,7 @@ nav{
     font-weight: bold;
     font-size: 150%;
     padding-left: 35px;
+    margin-bottom: 20px;
     @media all and (min-width: 426px){
         text-align: center;
         font-size: 200%;
@@ -15,10 +18,7 @@ nav{
 
 .navlist{
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 20px;
     background-color: $backgroundgrey;
     @include boxshadow;
     border-radius: 25px;
@@ -28,13 +28,14 @@ nav{
     font-weight: bold;
     &:hover{
         color: $iconemainpage;
+        cursor: grab;
         opacity: 0.8;
         @include boxshadowhover;
     }
     @media all and (min-width: 426px){
         width: 70%;
         margin: auto;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     @media all and (min-width: 1024px){
         width: 50%;
@@ -59,6 +60,8 @@ nav{
 .navicone{
     padding-left: 15px;
     padding-right: 25px;
+    color: grey;
+    width: 10%;
     @media all and (max-width: 374px){
         padding-right: 15px;
     }

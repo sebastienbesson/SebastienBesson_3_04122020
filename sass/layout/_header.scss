@@ -1,3 +1,6 @@
+header{
+    background-color: white;
+}
 header h1{
     font-family: 'shrikhand', sans-serif;
     font-size: 200%;
@@ -58,6 +61,9 @@ header a{
         padding-left: 0%;
         padding-bottom: 30px;
         border-bottom: none;
+        @media all and (min-width: 425px) and (max-width: 425px){
+            padding-left: 35px;
+        }
         @media all and (min-width: 1920px){
             font-size: 200%;
         } 

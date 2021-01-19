@@ -4,6 +4,7 @@
     &:hover{
        opacity: 0.8;
        @include boxshadowhover;
+       cursor: grab;
     }
     @media all and (max-width: 374px){
         width: 90%;

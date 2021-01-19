@@ -1,3 +1,6 @@
+section{
+    background-color: $backgroundgrey;
+}
 section h4{
     background-color: $backgroundgrey;
     font-size: 150%;
@@ -104,9 +107,11 @@ section h4{
     padding-left: 10px;
     margin: 0.5px;
 }
-.fa-heart:hover{
+.textrestaurant i{
+    :hover{
     color: $iconemainpage;
     animation: heart 2000ms ease-in-out;
+    }
 }
 .fa-heart{
     float: right;
@@ -125,6 +130,7 @@ section img{
     @media all and (min-width: 1920px){
         height: 350px;
     }
+    background-color: $backgroundgrey;
 }
 .menutop{
     background-color: $backgroundgrey;
@@ -134,7 +140,6 @@ section img{
     position: relative;
     margin-top: -35px;
     padding-left: 20px;
-    padding-bottom: 30px;
     display: flex;
     @media all and (max-width: 424px){
         font-size: 90%;
@@ -171,18 +176,10 @@ section img{
         }
     }
 }
-.menucardlist{
-    @media all and (min-width: 1326px){
-        display: flex;
-        flex-direction: column;
-        width: 33%;
-    }
-}
 .menucard{
     animation: menucard 1000ms ease-in-out 200ms backwards;
     background-color: $backgroundgrey;
-    width: 425px;
-    padding-top: 25px;
+    width: 425px;  
     margin-bottom: 25px;
     @include tabletwidth;
     @media all and (min-width: 1326px){
@@ -191,16 +188,38 @@ section img{
         width: 100%;
     }
 }
+.menucardlist{
+    @media all and (min-width: 1326px){
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+    }
+}
 .menutitle{
-    @include bordermenutitle;
+    border-bottom: 2px $colourtertiary solid;
+    width: 45px;
+    margin-left: 23px;
     margin-bottom: 15px;
+    padding-top: 20px;
     padding-bottom: 0px;
     font-weight: lighter;  
-    @media all and (min-width: 426px){
-        margin-left: 110px;
+    @media all and (min-width: 768px){
+        margin-left: 120px;
     }
-    @media all and (min-width: 1920px){
+    @media all and (min-width: 426px){
+        margin-left: 120px;
+    }
+    @media all and (min-width: 1024px){
         font-size: 150%;
+        margin-left: 15%;
+    }
+    @media all and (min-width: 1326px){
+        font-size: 150%;
+        margin-left: 25px;
+    }
+    @media all and (min-width: 1990px){
+        font-size: 200%;
+        margin-left: 50px;
     }
 }
 .menu{
@@ -252,8 +271,7 @@ section img{
             overflow: hidden;
         }
         .menutext2{
-            transform: translateX(-50%);
-            transform-origin: 0% 50%;
+            animation: menutext 500ms ease-in-out forwards;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -290,6 +308,7 @@ section img{
     font-weight: bold;
     font-size: 105%;
     padding: 5% 0% 3% 10%;
+    animation: 500ms menutextout ease-in-out forwards;
     @media all and (max-width: 424px){
         font-size: 90%;
         padding: 5% 0% 2.5% 5%;
@@ -300,7 +319,7 @@ section img{
     font-style: normal;
     font-weight: lighter;
     padding: 2% 0% 3% 10%;
-    transition: transform 500ms ease-in-out;
+    animation: 500ms menutextout ease-in-out forwards;
     @media all and (max-width: 424px){
         font-size: 80%;
         padding: 5% 0% 5% 5%;

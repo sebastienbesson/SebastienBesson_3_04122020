@@ -15,13 +15,6 @@
     font-weight: bold;
     padding: 15px;
 }
-@mixin bordermenutitle{
-    border-bottom: 2px $colourtertiary solid;
-    width: 45px;
-    margin-left: 10px;
-    padding-top: 25px;
-}
-
 @mixin tabletwidth{
     width: 100%;
     margin: auto;
