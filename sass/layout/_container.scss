@@ -200,6 +200,7 @@ section img{
     font-size: 105%;
     padding: 5% 0% 3% 10%;
     animation: 500ms menutextout ease-in-out forwards;
+    white-space: nowrap;
     @media all and (max-width: 424px){
         font-size: 90%;
         padding: 5% 0% 2.5% 5%;
