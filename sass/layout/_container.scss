@@ -199,7 +199,7 @@ section img{
     font-weight: bold;
     font-size: 105%;
     padding: 5% 0% 3% 10%;
-    animation: 500ms menutextout ease-in-out forwards;
+    animation: 300ms menutextout ease-in-out forwards;
     white-space: nowrap;
     @media all and (max-width: 424px){
         font-size: 90%;
@@ -211,7 +211,7 @@ section img{
     font-style: normal;
     font-weight: lighter;
     padding: 2% 0% 3% 10%;
-    animation: 500ms menutextout ease-in-out forwards;
+    animation: 300ms menutextout ease-in-out forwards;
     @media all and (max-width: 424px){
         font-size: 80%;
         padding: 5% 0% 5% 5%;
