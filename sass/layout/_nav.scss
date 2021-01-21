@@ -27,10 +27,12 @@ nav{
     padding-bottom: 30px;
     font-weight: bold;
     &:hover{
-        color: $iconemainpage;
         cursor: grab;
         opacity: 0.8;
         @include boxshadowhover;
+        .navicone{
+            color: $iconemainpage;
+        }
     }
     @media all and (min-width: 426px){
         width: 70%;
