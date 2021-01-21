@@ -200,6 +200,9 @@ section img{
     font-size: 105%;
     padding: 5% 0% 3% 10%;
     animation: 500ms menutextout ease-in-out forwards;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     @media all and (max-width: 424px){
         font-size: 90%;
         padding: 5% 0% 2.5% 5%;
@@ -210,8 +213,10 @@ section img{
     font-style: normal;
     font-weight: lighter;
     padding: 2% 0% 3% 10%;
-    animation: 300ms menutextout ease-in-out forwards;
+    animation: 500ms menutextout ease-in-out forwards;
     white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     @media all and (max-width: 424px){
         font-size: 80%;
         padding: 5% 0% 5% 5%;
