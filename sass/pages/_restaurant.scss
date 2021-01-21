@@ -95,7 +95,7 @@
     margin: 0.5px;
 }
 .textrestaurant i{
-    :hover{
+    &:hover{
     color: $iconemainpage;
     animation: heart 2000ms ease-in-out;
     }
