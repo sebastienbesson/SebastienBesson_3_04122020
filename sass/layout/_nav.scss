@@ -27,7 +27,7 @@ nav{
     padding-bottom: 30px;
     font-weight: bold;
     &:hover{
-        cursor: grab;
+        cursor: pointer;
         opacity: 0.8;
         @include boxshadowhover;
         .navicone{

@@ -5,6 +5,9 @@
     @media all and (min-width: 1024px){
         display: flex;
     }
+    @media all and (max-width: 768px){
+        margin: auto;
+    }
 }
 .restaurant{
     width: 90%;
