@@ -256,6 +256,9 @@ section img{
 } 
 
 .fa-check-circle{
+    &:hover{
+    cursor: pointer;
+    }
     font-size: 200%;
     background-color: $colourtertiary;
     color: white;
