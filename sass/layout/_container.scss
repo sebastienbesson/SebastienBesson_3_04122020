@@ -124,6 +124,7 @@ section img{
     @include borderradius;
     @include boxshadow;
     &:hover{
+        cursor: pointer;
         .menuchoice{
             transform: translateX(-100%);
             @media all and (min-width: 768px){
@@ -156,13 +157,13 @@ section img{
             transform: rotate(360deg);
         }
         .menutext1{
-            animation: menutext 500ms ease-in-out forwards;
+            animation: menutextin 500ms ease-in-out forwards;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
         }
         .menutext2{
-            animation: menutext 500ms ease-in-out forwards;
+            animation: menutextin 500ms ease-in-out forwards;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
