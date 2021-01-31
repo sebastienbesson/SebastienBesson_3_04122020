@@ -200,7 +200,7 @@ section img{
     font-weight: bold;
     font-size: 105%;
     padding: 5% 0% 3% 10%;
-    animation: 500ms menutextout ease-in-out forwards;
+    animation: menutextout 500ms ease-in-out forwards;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -214,7 +214,7 @@ section img{
     font-style: normal;
     font-weight: lighter;
     padding: 2% 0% 3% 10%;
-    animation: 500ms menutextout ease-in-out forwards;
+    animation: menutextout 500ms ease-in-out forwards;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
